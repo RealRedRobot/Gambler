@@ -9,9 +9,8 @@ public class Gambler {
         Scanner sc = new Scanner(System.in);
 
 
-        System.out.println("Enter the game you want to play: ");
+        System.out.println("Enter the number of the game you want to play: ");
         System.out.println("1. Blackjack");
-        System.out.println("2. Roulette");
 
         int game = sc.nextInt();
 
@@ -19,10 +18,6 @@ public class Gambler {
             case 1:
                 Blackjack blackjack = new Blackjack();
                 blackjack.play();
-                break;
-            case 2:
-                Roulette roulette = new Roulette();
-                roulette.play();
                 break;
             default:
                 System.out.println("Invalid choice");
